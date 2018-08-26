@@ -1,0 +1,27 @@
+@import "../color/colors";
+
+@ant-prefix: ant;
+
+@primary-color: #F18F01;
+
+@primary-1: color(tint(@primary-color, 90%));
+@primary-2: color(tint(@primary-color, 80%));
+// Color used to control the text color in many active and hover states.
+@primary-5: color(tint(@primary-color, 20%)); 
+// Color used to control the text color of active buttons.
+@primary-6: color(shade(@primary-color, 5%));
+
+//** Tooltip text color
+@tooltip-color: #fff;
+//** Tooltip background color
+@tooltip-bg: #8F8E7C;
+//** Tooltip arrow width
+@tooltip-arrow-width: 5px;
+
+@shadow-color           : rgba(241, 143, 1, .7);
+@box-shadow-base        : @shadow-1-down;
+@shadow-1-up            : 0 -1px 6px @shadow-color;
+@shadow-1-down          : 0 1px 6px @shadow-color;
+@shadow-1-left          : -1px 0 6px @shadow-color;
+@shadow-1-right         : 1px 0 6px @shadow-color;
+@shadow-2               : 0 2px 8px @shadow-color;
